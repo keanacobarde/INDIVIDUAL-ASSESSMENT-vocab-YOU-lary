@@ -1,7 +1,7 @@
 import renderToDom from '../utils/renderToDom';
 
 const showVocabCards = (array) => {
-  let domString = '';
+  let domString = '<div id="vocab-container">';
   array.forEach((obj) => {
     domString += `<div class="card" style="width: 18rem;">
 <div class="card-body">
@@ -13,7 +13,8 @@ const showVocabCards = (array) => {
 </div>
 </div>`;
   });
-  renderToDom('#vocab-container', domString);
+  domString += '</div>';
+  renderToDom('#main-content', domString);
 };
 
 export default showVocabCards;
