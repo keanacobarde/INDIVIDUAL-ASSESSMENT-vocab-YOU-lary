@@ -11,7 +11,7 @@ const navBar = () => {
   <span class="link-text"> CREATE ENTRY </span>
   </a>
   </li>
-  <li class="nav_item"> <a href="#"><i class="fa-solid fa-door-open fa-3x"></i></a><div id="logout-button"></div> </li>
+  <li class="nav_item" > <a href="#"><i class="fa-solid fa-door-open fa-3x" id="signOut"></i></li>
 </ul>
 </nav>`;
   renderToDom('#navigation', domString);
