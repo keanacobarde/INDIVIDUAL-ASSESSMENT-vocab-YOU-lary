@@ -1,5 +1,6 @@
 import { signOut } from '../utils/auth';
 import getVocab from '../api/vocabData';
+import showVocabCards from '../pages/vocab';
 
 const navigationEvents = () => {
   document.querySelector('#app').addEventListener('click', (e) => {
@@ -8,7 +9,7 @@ const navigationEvents = () => {
     }
 
     if (e.target.id === 'home') {
-      getVocab().then(console.warn);
+      getVocab().then(showVocabCards);
     }
   });
 };
