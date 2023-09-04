@@ -5,7 +5,9 @@ const domBuilder = () => {
 <div id="navigation"></div>
 <div id="main-container">
 <div id="filter-buttons"></div>
-<div id="main-content"></div>
+<div id="main-content">
+<div id="vocab-container"></div>
+</div>
 </div>`;
   renderToDom('#app', domString);
 };
