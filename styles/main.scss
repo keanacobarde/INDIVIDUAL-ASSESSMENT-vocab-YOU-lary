@@ -1,10 +1,49 @@
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
-  text-align: center;
-  margin-top: 100px;
+  background-color: #fde4f2;
+  color: black;
+}
+
+.main-container {
+  margin: 5rem;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  background-color: #e68bbe;
+  position: fixed;
+}
+
+
+.navbar_links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  color:#fde4f2;
+}
+
+.nav_item > a {
+  list-style: none;
+  text-decoration: none;
+  color: #fde4f2;
+}
+
+.logo:hover {
+  color: pink;
+}
+
+.nav_item > a:hover {
+  color: pink;
+}
+
+.link-text {
+  display: none;
 }
