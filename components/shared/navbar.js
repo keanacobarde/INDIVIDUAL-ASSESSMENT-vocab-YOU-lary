@@ -3,10 +3,10 @@ import renderToDom from '../../utils/renderToDom';
 const navBar = () => {
   const domString = `<nav class="navbar">
 <ul class="navbar_links">
-  <li class="logo">
-  <a href="#" style="color:#fde4f2;"> <i class="fa-solid fa-pen-fancy fa-3x"></i></a>
-  </li>
-  <li class="nav_item"> <a href="#" id="">
+<li class="logo">
+<i class="fa-solid fa-pen-fancy fa-3x" style="margin-bottom:auto;"></i></a>
+</li>
+  <li class="nav_item"> <a href="#" id="create-entry">
   <i class="fa-solid fa-book fa-3x"></i>
   <span class="link-text"> CREATE ENTRY </span>
   </a>

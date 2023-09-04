@@ -17,22 +17,31 @@ body {
   position: fixed;
 }
 
-.navbar:hover {
-  width: 16rem;
-}
 
 .navbar_links {
   display: flex;
   flex-direction: column;
-  gap: 5rem 10rem;
   padding-left: 0;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  color:#fde4f2;
 }
 
 .nav_item > a {
   list-style: none;
   text-decoration: none;
   color: #fde4f2;
+}
+
+.logo:hover {
+  color: pink;
+}
+
+.nav_item > a:hover {
+  color: pink;
 }
 
 .link-text {
