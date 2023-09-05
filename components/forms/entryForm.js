@@ -19,7 +19,7 @@ const entryForm = (obj = {}) => {
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit Author</button>
   </form></div>`;
-  renderToDom('#entryForm', domString);
+  renderToDom('#main-content', domString);
 };
 
 export default entryForm;

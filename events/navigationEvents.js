@@ -1,6 +1,7 @@
 import { signOut } from '../utils/auth';
 import getVocab from '../api/vocabData';
 import showVocabCards from '../pages/vocab';
+import entryForm from '../components/forms/entryForm';
 
 const navigationEvents = (user) => {
   document.querySelector('#app').addEventListener('click', (e) => {
@@ -13,7 +14,7 @@ const navigationEvents = (user) => {
     }
 
     if (e.target.id === 'create-entry') {
-      console.warn('CREATE ENTRY?');
+      entryForm();
     }
   });
 };
