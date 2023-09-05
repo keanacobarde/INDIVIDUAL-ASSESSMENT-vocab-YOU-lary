@@ -11,6 +11,10 @@ const navigationEvents = (user) => {
     if (e.target.id === 'home') {
       getVocab(user).then(showVocabCards);
     }
+
+    if (e.target.id === 'create-entry') {
+      console.warn('CREATE ENTRY?');
+    }
   });
 };
 
