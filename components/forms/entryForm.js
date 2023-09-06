@@ -4,7 +4,7 @@ import clearDom from '../../utils/clearDom';
 const entryForm = (obj = {}) => {
   clearDom();
   const domString = `<div id="entryForm">
-<form id="${obj.firebaseKey ? `entry-form--${obj.firebaseKey}` : 'submit-entry'}" class="mb-4" style="height:100%;width:80%;margin-top:10%">
+<form id="${obj.firebaseKey ? `edit-entry-form--${obj.firebaseKey}` : 'submit-entry'}" class="mb-4" style="height:100%;width:80%;margin-top:10%">
 <div class="form-group">
       <label for="image">Title</label>
       <input type="text" class="form-control" id="title" placeholder="Title" value="${obj.title || ''}"required>

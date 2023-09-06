@@ -1,7 +1,7 @@
 import { signOut } from '../utils/auth';
-import getVocab from '../api/vocabData';
-import showVocabCards from '../pages/vocab';
+import { getVocab } from '../api/vocabData';
 import entryForm from '../components/forms/entryForm';
+import showVocabCards from '../pages/vocab';
 
 const navigationEvents = (user) => {
   document.querySelector('#app').addEventListener('click', (e) => {
