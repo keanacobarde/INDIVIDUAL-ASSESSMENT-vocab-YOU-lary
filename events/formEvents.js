@@ -1,4 +1,5 @@
-import { postVocab } from '../api/vocabData';
+import { getVocab, postVocab, patchVocab } from '../api/vocabData';
+import showVocabCards from '../pages/vocab';
 
 const formEvents = (user) => {
   document.querySelector('#main-content').addEventListener('submit', (e) => {
@@ -10,9 +11,15 @@ const formEvents = (user) => {
         definition: document.querySelector('#definition').value,
         date: new Date(),
         category: document.querySelector('#category-label').innerHTML,
-        user: user.uid
+        uid: user.uid
       };
-      postVocab(payload).then(console.warn);
+      postVocab(payload).then(({ name }) => {
+        const patchPayload = { firebaseKey: name };
+
+        patchVocab(patchPayload).then(() => {
+          getVocab(user).then(showVocabCards);
+        });
+      });
     }
   });
 };

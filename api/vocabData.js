@@ -27,7 +27,21 @@ const postVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const patchVocab = (payload) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${payload.firebaseKey}.json`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getVocab,
-  postVocab
+  postVocab,
+  patchVocab
 };
