@@ -1,4 +1,5 @@
 import { getVocab, postVocab, patchVocab } from '../api/vocabData';
+import filterBtns from '../components/buttons/filterButtons';
 import showVocabCards from '../pages/vocab';
 
 const formEvents = (user) => {
@@ -18,6 +19,7 @@ const formEvents = (user) => {
 
         patchVocab(patchPayload).then(() => {
           getVocab(user).then(showVocabCards);
+          filterBtns();
         });
       });
     }

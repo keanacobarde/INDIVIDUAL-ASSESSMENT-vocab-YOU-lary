@@ -53,6 +53,15 @@ body {
   display: none;
 }
 
+// filter btns styling
+#filter-buttons {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 // vocab card styling
 
 #vocab-container {
