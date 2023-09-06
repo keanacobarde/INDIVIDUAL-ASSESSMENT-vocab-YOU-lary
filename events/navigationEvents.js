@@ -2,6 +2,7 @@ import { signOut } from '../utils/auth';
 import { getVocab } from '../api/vocabData';
 import entryForm from '../components/forms/entryForm';
 import showVocabCards from '../pages/vocab';
+import filterBtns from '../components/buttons/filterButtons';
 
 const navigationEvents = (user) => {
   document.querySelector('#app').addEventListener('click', (e) => {
@@ -10,6 +11,7 @@ const navigationEvents = (user) => {
     }
 
     if (e.target.id === 'home') {
+      filterBtns();
       getVocab(user).then(showVocabCards);
     }
 
