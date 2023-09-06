@@ -6,8 +6,8 @@ const navBar = () => {
 <li class="logo">
 <i class="fa-solid fa-pen-fancy fa-3x" id="home" style="margin-bottom:auto;"></i></a>
 </li>
-  <li class="nav_item"> <a href="#" id="create-entry">
-  <i class="fa-solid fa-book fa-3x"></i>
+  <li class="nav_item"> <a href="#">
+  <i class="fa-solid fa-book fa-3x" id="create-entry"></i>
   <span class="link-text"> CREATE ENTRY </span>
   </a>
   </li>

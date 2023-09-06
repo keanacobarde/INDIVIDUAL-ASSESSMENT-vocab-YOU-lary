@@ -1,5 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fde4f2;
@@ -57,4 +60,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0.5rem;
+}
+
+// form styling
+#entryForm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
