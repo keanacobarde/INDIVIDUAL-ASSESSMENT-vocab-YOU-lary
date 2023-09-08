@@ -18,10 +18,23 @@ const formEvents = (user) => {
         const patchPayload = { firebaseKey: name };
 
         patchVocab(patchPayload).then(() => {
-          getVocab(user).then(showVocabCards);
           filterBtns();
+          getVocab(user).then(showVocabCards);
         });
       });
+    }
+
+    if (e.target.id.includes('edit-entry-form')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      const payload = {
+        title: document.querySelector('#title').value,
+        definition: document.querySelector('#definition').value,
+        date: new Date(),
+        category: document.querySelector('#category-label').innerHTML,
+        uid: user.uid,
+        firebaseKey
+      };
+      patchVocab(payload).then(() => getVocab(user).then(showVocabCards));
     }
   });
 };

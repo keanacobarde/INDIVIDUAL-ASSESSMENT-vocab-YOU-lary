@@ -8,8 +8,8 @@ const showVocabCards = (array) => {
   <h5 class="card-title">${obj.title}</h5>
   <h6 class="card-subtitle mb-2 text-body-secondary">${obj.category}</h6>
   <p class="card-text">${obj.definition}</p>
-  <a href="#" class="card-link">Edit</a>
-  <a href="#" class="card-link">Delete</a>
+  <a href="#" class="card-link" id="edit-vocab-card--${obj.firebaseKey}">Edit</a>
+  <a href="#" class="card-link" id="delete-vocab-card--${obj.firebaseKey}">Delete</a>
 </div>
 </div>`;
   });

@@ -5,6 +5,7 @@ import showVocabCards from '../pages/vocab';
 import { getVocab } from '../api/vocabData';
 import formEvents from '../events/formEvents';
 import filterBtns from '../components/buttons/filterButtons';
+import domEvents from '../events/domEvents';
 
 const startApp = (user) => {
   domBuilder();
@@ -12,6 +13,7 @@ const startApp = (user) => {
   filterBtns();
   getVocab(user).then(showVocabCards);
   navigationEvents(user);
+  domEvents(user);
   formEvents(user);
 };
 
