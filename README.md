@@ -3,7 +3,7 @@
 
 A persistent, CRUD application for creating vocabulary entries, modifying entries, reading, and deleting them. 
 
-[View App](#https://studifyassignment.netlify.app
+[View App](#https://studifyassignment.netlify.app)
 
 ## Get Started <!-- OPTIONAL, but doesn't hurt -->
 1. Clone the repo
