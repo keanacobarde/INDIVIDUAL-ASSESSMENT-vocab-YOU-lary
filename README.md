@@ -1,4 +1,4 @@
-# This is the name of my Project  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
+# This is the name of my Project  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://studifyassignment.netlify.app)
 <!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
 Here I am putting an overview of what my project is about. It comes below the name of my project so that others can read what it is about and get more details.
