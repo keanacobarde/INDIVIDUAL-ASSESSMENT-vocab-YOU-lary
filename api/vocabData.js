@@ -52,9 +52,22 @@ const getSingleVocab = (fbk) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const deleteVocab = (fbk) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${fbk}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getVocab,
   postVocab,
   patchVocab,
-  getSingleVocab
+  getSingleVocab,
+  deleteVocab
 };
