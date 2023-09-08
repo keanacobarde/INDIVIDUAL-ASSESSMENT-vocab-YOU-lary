@@ -18,8 +18,8 @@ const formEvents = (user) => {
         const patchPayload = { firebaseKey: name };
 
         patchVocab(patchPayload).then(() => {
-          getVocab(user).then(showVocabCards);
           filterBtns();
+          getVocab(user).then(showVocabCards);
         });
       });
     }

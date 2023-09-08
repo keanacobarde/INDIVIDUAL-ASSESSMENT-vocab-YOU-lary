@@ -3,6 +3,9 @@ const domEvents = (user) => {
     if (e.target.id.includes('edit')) {
       console.warn('edit?', user.uid);
     }
+    if (e.target.id.includes('delete')) {
+      console.warn('delete?', user.uid);
+    }
   });
 };
 

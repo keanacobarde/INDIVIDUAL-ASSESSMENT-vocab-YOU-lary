@@ -43,5 +43,5 @@ const patchVocab = (payload) => new Promise((resolve, reject) => {
 export {
   getVocab,
   postVocab,
-  patchVocab
+  patchVocab,
 };
