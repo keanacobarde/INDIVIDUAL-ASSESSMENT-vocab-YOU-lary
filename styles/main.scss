@@ -9,6 +9,9 @@ body {
   color: black;
 }
 
+
+//login styling
+
 #main-content {
   margin-left: 7rem;
 }
@@ -77,4 +80,20 @@ body {
   justify-content: center;
   align-content: center;
   width: 100%;
+}
+
+//login screen 
+.login-screen {
+  display: grid;
+  padding-top: 10%;
+}
+
+.login-header {
+  display: flex;
+  justify-content: center;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
 }
