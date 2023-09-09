@@ -20,18 +20,39 @@ npm start
 - A user can add a new term, remove a term, edit terms and their definitions.
 
 ## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
-https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
+https://www.loom.com/share/debaab731d8a4165b79d72ac30b11e35?sid=cc3d2303-b70e-4682-af4d-77a403cf69d0
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
-- [Check out the deployed site](#your-link)
-- [Wireframes](#your-link)
-- [Project Board](#your-link)
-
+- [Check out the deployed site](#https://studifyassignment.netlify.app)
+- [Wireframes](#https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
+- [Project Board](#https://github.com/users/keanacobarde/projects/6/views/1)
+- [ERD](#https://dbdiagram.io/d/64f35c4602bd1c4a5eda2adb)
+- Technical Flow Chart (#https://www.figma.com/file/BVSlw5Az1YrTqgVetB1d5v/Studify---Components?type=design&node-id=0%3A1&mode=design&t=eEXk1SwlHxjN2i79-1)
 ## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
-PLACE CODE SNIPPET HERE
+Event Listeners for the Drop-down! 
+```
+  // EVENT LISTENERS //
+  const eventListeners = () => {
+    document.querySelector('#entryForm').addEventListener('click', (e) => {
+      const catLabel = document.querySelector('#category-label');
+      if (e.target.id === 'javascript') {
+        catLabel.innerHTML = 'JavaScript';
+      }
+      if (e.target.id === 'cybersecurity') {
+        catLabel.innerHTML = 'Cybersecurity';
+      }
+      if (e.target.id === 'pentesting') {
+        catLabel.innerHTML = 'Penetration Testing';
+      }
+    });
+  };
+eventListeners();
+};
+```
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
-<img width="1148" alt="Your Alt" src="your-link.png">
+<img width="auto" alt="Your Alt" src="assets\Screenshot 2023-09-09 100045.png">
+<img width="auto" alt="Your Alt" src="assets\vocab.png">
 
 ## Contributors
 - [Keana Cobarde](https://github.com/keanacobarde)
