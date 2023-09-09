@@ -27,7 +27,7 @@ https://www.loom.com/share/debaab731d8a4165b79d72ac30b11e35?sid=cc3d2303-b70e-46
 - [Wireframes](#https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
 - [Project Board](#https://github.com/users/keanacobarde/projects/6/views/1)
 - [ERD](#https://dbdiagram.io/d/64f35c4602bd1c4a5eda2adb)
-- Technical Flow Chart (#https://www.figma.com/file/BVSlw5Az1YrTqgVetB1d5v/Studify---Components?type=design&node-id=0%3A1&mode=design&t=eEXk1SwlHxjN2i79-1)
+- Technical Flow Chart(#https://www.figma.com/file/BVSlw5Az1YrTqgVetB1d5v/Studify---Components?type=design&node-id=0%3A1&mode=design&t=eEXk1SwlHxjN2i79-1)
 ## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
 Event Listeners for the Drop-down! 
 ```
